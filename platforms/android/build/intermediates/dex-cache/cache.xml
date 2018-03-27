@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/michael/.android/build-cache/4f4381d146033a549efd2d74b261d5b63f8d13b8/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.3"
+        sha1="746274223beb11b1cda7854d7eec3038695c2c93">
+        <dex dex="/home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/build/intermediates/pre-dexed/debug/classes_b20e5c141f640d7141fe4fbeed87be5377023fce.jar" />
+    </item>
+
+</items>

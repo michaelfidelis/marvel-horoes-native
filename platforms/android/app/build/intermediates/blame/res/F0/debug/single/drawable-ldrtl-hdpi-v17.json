@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png",
+        "source": "/home/michael/.android/build-cache/b4b7f582a72f67c236311fb80e12b0b9283fcf53/output/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "/home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png",
+        "source": "/home/michael/.android/build-cache/b4b7f582a72f67c236311fb80e12b0b9283fcf53/output/res/drawable-ldrtl-hdpi-v17/abc_ic_menu_cut_mtrl_alpha.png"
+    },
+    {
+        "merged": "/home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/build/intermediates/res/merged/F0/debug/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png",
+        "source": "/home/michael/.android/build-cache/b4b7f582a72f67c236311fb80e12b0b9283fcf53/output/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
+    }
+]

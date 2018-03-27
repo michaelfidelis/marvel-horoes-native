@@ -1,0 +1,19 @@
+<FlexboxLayout class="page">
+	<StackLayout class="form">
+		<Label class="header" text="Entrar em Quadrinhos"></Label>
+
+		<StackLayout class="input-margin">
+			<TextField class="input" hint="E-mail" keyboardType="email" autocorrect="false" autocapitalizationType="none" [(ngModel)]="usuario.email" returnKeyType="next"></TextField>
+			<StackLayout class="hr-light"></StackLayout>
+		</StackLayout>
+
+		<StackLayout class="input-margin">
+			<TextField #password class="input" hint="Senha" secure="true" [(ngModel)]="usuario.senha" (returnPress)="login()"></TextField>
+			<StackLayout class="hr-light"></StackLayout>
+		</StackLayout>
+
+		<Button text="Entrar" (tap)="login()" class="btn btn-primary m-t-20"></Button>
+		<Button text="Cadastrar" (tap)="cadastro()" class="btn btn-danger m-t-20"></Button>
+
+	</StackLayout>
+</FlexboxLayout>

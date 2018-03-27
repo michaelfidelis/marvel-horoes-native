@@ -1,0 +1,14 @@
+<StackLayout class="page">
+    <SearchBar hint="Buscar..." (submit)="search($event)"></SearchBar>
+    <ListView [items]="comics" class="list-group">
+        <ng-template let-quadrinho="item">
+            <StackLayout orientation="horizontal">
+                <Image src="{{quadrinho.thumbnail.path}}.{{quadrinho.thumbnail.extension}}" class="thumb"></Image>
+                <StackLayout orientation="vertical" (longPress)="longPress(quadrinho)">
+                    <Label [text]="quadrinho.title" class="list-group-item-heading"></Label>
+                    <Label [text]="toDate(quadrinho.modified)" class="list-group-item-text"></Label>
+                </StackLayout>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+</StackLayout>

@@ -1,0 +1,14 @@
+<ActionBar class="action-bar" title="Quadrinhos">
+        <ActionItem (tap)="verColecao()"
+        ios.systemIcon="16" ios.position="left"
+        text="Coleção" android.position="popup"></ActionItem>
+        
+        <ActionItem (tap)="logout()"
+        ios.systemIcon="16" ios.position="right"
+        text="Sair" android.position="popup"></ActionItem>
+        
+        
+</ActionBar>
+<StackLayout>
+    <app-comic-list [comics]="(quadrinhos |async).data.results" (onSearch)="obterQuadrinhos($event)" (onLongPress)="adicionarFavorito($event)" (onTap)="verDetalhes($event)"></app-comic-list>
+</StackLayout>

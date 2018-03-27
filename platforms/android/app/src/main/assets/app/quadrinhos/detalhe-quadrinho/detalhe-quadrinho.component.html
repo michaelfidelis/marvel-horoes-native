@@ -1,0 +1,52 @@
+<ActionBar class="action-bar" title="Detalhes do quadrinho">
+    <NavigationButton android.systemIcon="ic_menu_back" text="Voltar" (tap)="voltar()"></NavigationButton>
+
+    <ActionItem (tap)="adicionarFavorito()" ios.systemIcon="16" ios.position="right" text="Adicionar na coleção" android.position="popup"
+        *ngIf="!quadrinho.isFavorite"></ActionItem>
+
+    <ActionItem (tap)="removerFavorito()" ios.systemIcon="16" ios.position="right" text="Remover da coleção" android.position="popup"
+        *ngIf="quadrinho.isFavorite"></ActionItem>
+
+</ActionBar>
+
+<FlexboxLayout class="page">
+
+    <StackLayout>
+
+        <StackLayout>
+            <Image row="0" col="0" rowSpan="2" height="200" width="200" src="{{quadrinho.thumbnail.path}}.{{quadrinho.thumbnail.extension}}"
+                class="thumb p-16" loadMode="async"></Image>
+        </StackLayout>
+
+        <StackLayout>
+            <StackLayout>
+                <Label text="Título" class="header"></Label>
+                <Label [text]="quadrinho.title" textWrap="true"></Label>
+            </StackLayout>
+            <StackLayout>
+                <Label text="Descrição" class="header"></Label>
+                <Label [text]="quadrinho.description ? quadrinho.description : 'Não há descrição'" textWrap="true"></Label>
+            </StackLayout>
+            <StackLayout>
+                <Label text="Data" class="header"></Label>
+                <Label [text]="toDate(quadrinho.modified)"></Label>
+            </StackLayout>
+        </StackLayout>
+
+        <StackLayout>
+            <StackLayout>
+                <Label text="Personagens" class="header" *ngIf="quadrinho.characters.items.length > 0"></Label>
+                <Label text="Não há personagens" class="header" *ngIf="quadrinho.characters.items.length == 0"></Label>
+            </StackLayout>
+            <GridLayout>
+                <ListView [items]="quadrinho.characters.items" class="list-group" height="100%">
+                    <ng-template let-personagem="item" let-i="index" let-odd="odd" let-even="even">
+                        <GridLayout class="list-group-item">
+                            <Label [text]="personagem.name"></Label>
+                        </GridLayout>
+                    </ng-template>
+                </ListView>
+            </GridLayout>
+        </StackLayout>
+    </StackLayout>
+</FlexboxLayout>

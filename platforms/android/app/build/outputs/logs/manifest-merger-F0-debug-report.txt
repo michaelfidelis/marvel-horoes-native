@@ -1,0 +1,138 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:2:1-43:12
+	package
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:3:2-39
+		INJECTED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:5:2-27
+		INJECTED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:4:2-25
+		INJECTED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:2:11-69
+supports-screens
+ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:7:2-11:33
+	android:largeScreens
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:10:3-30
+	android:smallScreens
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:8:3-30
+	android:normalScreens
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:9:3-31
+	android:xlargeScreens
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:11:3-31
+uses-sdk
+ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:13:2-15:34
+MERGED from [:nativescript-optimized:] /home/michael/.android/build-cache/4f4381d146033a549efd2d74b261d5b63f8d13b8/output/AndroidManifest.xml:7:5-9:41
+MERGED from [:TNSListView-release:] /home/michael/.android/build-cache/d4b18401af597af2539672ddf7e1c66392e80c5d/output/AndroidManifest.xml:7:5-9:41
+MERGED from [:TNSCore-release:] /home/michael/.android/build-cache/1c7a9330cb6acaaf6b669613f3ce3834be108542/output/AndroidManifest.xml:7:5-9:41
+MERGED from [:widgets-release:] /home/michael/.android/build-cache/20a06c5cc51718efa0e0644b8b71f5f70fba7bbb/output/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:design:26.0.0-alpha1] /home/michael/.android/build-cache/bc87512624dc3056a45852b67a81717968ad1e89/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/michael/.android/build-cache/b4b7f582a72f67c236311fb80e12b0b9283fcf53/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/michael/.android/build-cache/75ceb6ce98b2685325fe3a5f483d7e1af72700d8/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/michael/.android/build-cache/467ebe225f94dc6939955700f80a8c9257bf2370/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/michael/.android/build-cache/40181cd73cea9220ec5f8fe1f58989844502d897/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/michael/.android/build-cache/921eba58c2840440b59cb512763137d46d3cbc58/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/michael/.android/build-cache/a7f489ff3e2e04c17b294ac1f11882b6ab37c3e9/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/michael/.android/build-cache/172be65f39eb65767ccbb9efaf4e3e7750420fc0/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/michael/.android/build-cache/0facbf2e79f9c3ecde7d39aaa2c12bf03c45d658/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/michael/.android/build-cache/97ba1799b3d08c7714ed326208ab67180d857f54/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/michael/.android/build-cache/b84389e516c57c9189c19309892ecc25363ef3fd/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/michael/.android/build-cache/5383c44434e74655ce38d34d1cfb236f8a6f77e6/output/AndroidManifest.xml:21:5-23:58
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.0.0-alpha1] /home/michael/.android/build-cache/bc87512624dc3056a45852b67a81717968ad1e89/output/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:15:3-32
+		INJECTED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:14:3-29
+		INJECTED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:17:2-76
+	android:name
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:17:19-74
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:18:2-77
+	android:name
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:18:19-75
+uses-permission#android.permission.INTERNET
+ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:19:2-63
+	android:name
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:19:19-61
+application
+ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:21:2-42:16
+MERGED from [:widgets-release:] /home/michael/.android/build-cache/20a06c5cc51718efa0e0644b8b71f5f70fba7bbb/output/AndroidManifest.xml:11:5-12:19
+MERGED from [com.android.support:design:26.0.0-alpha1] /home/michael/.android/build-cache/bc87512624dc3056a45852b67a81717968ad1e89/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/michael/.android/build-cache/b4b7f582a72f67c236311fb80e12b0b9283fcf53/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/michael/.android/build-cache/75ceb6ce98b2685325fe3a5f483d7e1af72700d8/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/michael/.android/build-cache/467ebe225f94dc6939955700f80a8c9257bf2370/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/michael/.android/build-cache/921eba58c2840440b59cb512763137d46d3cbc58/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/michael/.android/build-cache/a7f489ff3e2e04c17b294ac1f11882b6ab37c3e9/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/michael/.android/build-cache/172be65f39eb65767ccbb9efaf4e3e7750420fc0/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/michael/.android/build-cache/0facbf2e79f9c3ecde7d39aaa2c12bf03c45d658/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/michael/.android/build-cache/97ba1799b3d08c7714ed326208ab67180d857f54/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/michael/.android/build-cache/b84389e516c57c9189c19309892ecc25363ef3fd/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/michael/.android/build-cache/5383c44434e74655ce38d34d1cfb236f8a6f77e6/output/AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:25:3-35
+	android:allowBackup
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:23:3-29
+	android:icon
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:24:3-32
+	android:theme
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:26:3-34
+	android:name
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:22:3-49
+activity#com.tns.NativeScriptActivity
+ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:28:3-40:14
+	android:label
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:30:4-49
+	android:configChanges
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:31:4-65
+	android:theme
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:32:4-44
+	android:name
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:29:4-47
+meta-data#SET_THEME_ON_LAUNCH
+ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:34:4-87
+	android:resource
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:34:50-84
+	android:name
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:34:15-49
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:36:4-39:20
+action#android.intent.action.MAIN
+ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:37:5-57
+	android:name
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:37:13-54
+category#android.intent.category.LAUNCHER
+ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:38:5-65
+	android:name
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:38:15-62
+activity#com.tns.ErrorReportActivity
+ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:41:3-57
+	android:name
+		ADDED from /home/michael/Desenvolvimento/Projetos/Estudos.NativeScript/quadrinhos/platforms/android/app/src/main/AndroidManifest.xml:41:13-55
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.0.0-alpha1] /home/michael/.android/build-cache/bc87512624dc3056a45852b67a81717968ad1e89/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /home/michael/.android/build-cache/b4b7f582a72f67c236311fb80e12b0b9283fcf53/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /home/michael/.android/build-cache/75ceb6ce98b2685325fe3a5f483d7e1af72700d8/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /home/michael/.android/build-cache/467ebe225f94dc6939955700f80a8c9257bf2370/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /home/michael/.android/build-cache/40181cd73cea9220ec5f8fe1f58989844502d897/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] /home/michael/.android/build-cache/921eba58c2840440b59cb512763137d46d3cbc58/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /home/michael/.android/build-cache/a7f489ff3e2e04c17b294ac1f11882b6ab37c3e9/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /home/michael/.android/build-cache/172be65f39eb65767ccbb9efaf4e3e7750420fc0/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /home/michael/.android/build-cache/0facbf2e79f9c3ecde7d39aaa2c12bf03c45d658/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /home/michael/.android/build-cache/97ba1799b3d08c7714ed326208ab67180d857f54/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /home/michael/.android/build-cache/b84389e516c57c9189c19309892ecc25363ef3fd/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /home/michael/.android/build-cache/5383c44434e74655ce38d34d1cfb236f8a6f77e6/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:design:26.0.0-alpha1] /home/michael/.android/build-cache/bc87512624dc3056a45852b67a81717968ad1e89/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:design:26.0.0-alpha1] /home/michael/.android/build-cache/bc87512624dc3056a45852b67a81717968ad1e89/output/AndroidManifest.xml:26:9-47

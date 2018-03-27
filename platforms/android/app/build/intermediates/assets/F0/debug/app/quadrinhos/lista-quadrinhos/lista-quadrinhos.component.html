@@ -1,0 +1,9 @@
+<ActionBar class="action-bar">
+    <Label class="action-bar-title" text="Quadrinhos"></Label>
+    <ActionItem (tap)="obterQuadrinhos()"
+      ios.systemIcon="16" ios.position="right"
+      text="Atualizar" android.position="popup"></ActionItem>
+</ActionBar>
+<StackLayout>
+    <app-comic-list [comicData]="quadrinhos"></app-comic-list>
+</StackLayout>

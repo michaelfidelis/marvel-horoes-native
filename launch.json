@@ -1,0 +1,19 @@
+{
+    "name": "Launch on Android",
+    "type": "nativescript",
+    "request": "launch",
+    "platform": "android",
+    "appRoot": "${workspaceRoot}",
+    "sourceMaps": true,
+    "watch": true,
+    "stopOnEntry": false
+},{
+    "name": "Attach on Android",
+    "type": "nativescript",
+    "request": "attach",
+    "platform": "android",
+    "appRoot": "${workspaceRoot}",
+    "sourceMaps": true,
+    "watch": true
+}
+        

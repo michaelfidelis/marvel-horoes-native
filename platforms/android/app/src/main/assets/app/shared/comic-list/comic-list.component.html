@@ -1,0 +1,15 @@
+<StackLayout class="page">
+    <SearchBar hint="Buscar..." (submit)="search($event)"></SearchBar>
+    <ListView [items]="comics" class="list-group" itemTap="tap(undefined)">
+        <ng-template let-quadrinho="item">
+            <StackLayout orientation="horizontal" class="list-group-item" (longPress)="longPress(quadrinho)" (tap)="tap(quadrinho)">
+                <Image row="0" col="0" rowSpan="2" height="108" width="108" src="{{quadrinho.thumbnail.path}}.{{quadrinho.thumbnail.extension}}"
+                    class="thumb p-16" loadMode="async"></Image>
+                <GridLayout class="list-group-item" rows="auto *" columns="*">
+                    <Label row="0" col="0" [text]="quadrinho.title" textWrap="true" class="list-group-item-heading"></Label>
+                    <Label row="1" col="0" class="list-group-item-text" [text]="toDate(quadrinho.modified)"></Label>
+                </GridLayout>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+</StackLayout>
