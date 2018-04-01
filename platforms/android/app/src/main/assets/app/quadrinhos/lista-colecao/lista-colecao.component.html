@@ -1,6 +1,0 @@
-<ActionBar class="action-bar" title="Coleção de Quadrinhos">
-        <NavigationButton android.systemIcon="ic_menu_back" text="Voltar" (tap)="voltar()"></NavigationButton>
-</ActionBar>
-<StackLayout>
-    <app-comic-list [comics]="quadrinhos" (onSearch)="buscar($event)" (onTap)="verDetalhes($event)"></app-comic-list>
-</StackLayout>  
