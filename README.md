@@ -14,11 +14,10 @@ um código de desconto para o usuário.
 * Listar todos os estabelecimentos por proximidade e categorias;
 * Apresentar os estabelecimentos no mapa;
 * Mapear rota a partir da localização do usuário até o estabelecimento
-selecionado;
+selecionados;
 * Apresentar detalhes do estabelecimento selecionado;
 * Criar uma nova compra, ela também deverá funcionar offline;
-* Escanear QRCode para obter os dados do estabelecimento na criação de uma
-nova compra;
+* Escanear QRCode para obter os dados do estabelecimento na criação de uma  nova compra;
 * Apresentar notificações de eventos criados pelos comerciantes caso o
 usuário esteja próximo.
 
