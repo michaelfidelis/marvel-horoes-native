@@ -1,51 +1,32 @@
 import { Injectable } from '@angular/core';
 import {Md5} from 'ts-md5/dist/md5';
-
+import { Observable } from 'rxjs/Observable';
 
 import * as storage from "application-settings";
 import {Usuario} from './../model';
 import { Router } from '@angular/router';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class AuthService {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private http: HttpClient) { }
 
-  public signup(nome: string, email: string, senha:string):boolean {
-    let usuarios: Usuario[] = JSON.parse(storage.getString('usuarios') || '[]');
-    let usuarioInexistente = usuarios.every(usuario => usuario.email !== email);
-
-    if (usuarioInexistente) {
-      let senhaCrypto = Md5.hashStr(senha).toString();
-
-      let novoUsuario = new Usuario();
-      novoUsuario.nome = nome;
-      novoUsuario.email = email;
-      novoUsuario.senha = senhaCrypto;
-      usuarios.push(novoUsuario);
-
-      storage.setString('usuarios', JSON.stringify(usuarios));
-    }
-
-    return usuarioInexistente;
+  public signup(nome: string, email: string, senha:string):Observable<Usuario> {
+      return this.http.post<any>('/api/users', {nome, email, senha});
   }
 
-  public login(email: string, senha:string):Usuario {
-    let usuarios: Usuario[] = JSON.parse(storage.getString('usuarios') || '[]');
-    let usuarioEncontrado = usuarios.find(usuario => usuario.email === email);
+  public login(email: string, senha:string):Observable<Usuario> {
+    return this.http.post<any>('/api/auth/', {email, senha}).map((response) => {
+      let usuario: Usuario;
 
-    if (usuarioEncontrado) {
-      let senhaCripto = Md5.hashStr(senha).toString();
-      
-      if (usuarioEncontrado.senha == senhaCripto) {
-        storage.setString('usuarioLogado', JSON.stringify(usuarioEncontrado));
-        return usuarioEncontrado;
-      } else {
-        return undefined;
+      if (response.usuario) {
+        usuario = response.usuario;
+        storage.setString('usuarioLogado', JSON.stringify(usuario));
       }
-    }
 
-    return usuarioEncontrado;
+      return usuario;
+    });
   }
 
   public logout() {

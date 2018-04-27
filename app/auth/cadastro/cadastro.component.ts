@@ -24,30 +24,27 @@ export class CadastroComponent implements OnInit {
     cadastrar() {
 
         if (!this.camposValidos()) return;
-        
-        let usuarioCadastrado: boolean = this.authService.signup(
-            this.usuario.nome,
-            this.usuario.email,
-            this.usuario.senha
-        );
 
-        if (usuarioCadastrado) {
-            alert({
-                title: 'Quadrinhos',
-                okButtonText: 'OK',
-                message: 'Usuário cadastrado com sucesso!'
-            });
-            this.router.navigate(['/auth']);
-        } else {
-          alert({
-            title: 'Quadrinhos',
-            okButtonText: 'OK',
-            message: `O usuário ${this.usuario.email} já existe!`
-        });
-        }
+        this.authService.signup(this.usuario.nome, this.usuario.email, this.usuario.senha).subscribe(
+            (usuarioCadastrado) => {
+                alert({
+                    title: 'Quadrinhos',
+                    okButtonText: 'OK',
+                    message: 'Usuário cadastrado com sucesso!'
+                });
+                this.router.navigate(['/auth']);
+            },
+            (errorResponse) => {
+                alert({
+                    title: 'Quadrinhos',    
+                    okButtonText: 'OK',
+                    message: errorResponse
+                });
+            }
+        );
     }
 
-    private camposValidos(): boolean{
+    private camposValidos(): boolean {
         if (this.usuario.nome == undefined || this.usuario.nome == '') {
             alert({
                 title: 'Quadrinhos',
@@ -55,7 +52,6 @@ export class CadastroComponent implements OnInit {
                 message: `Preencha o nome do usuário!`
             });
             return false;
-
         } else if (this.usuario.email == undefined || this.usuario.email == '') {
             alert({
                 title: 'Quadrinhos',
@@ -63,7 +59,6 @@ export class CadastroComponent implements OnInit {
                 message: `Preencha o e-mail do usuário!`
             });
             return false;
-
         } else if (this.usuario.senha == undefined || this.usuario.senha == '') {
             alert({
                 title: 'Quadrinhos',
@@ -74,7 +69,6 @@ export class CadastroComponent implements OnInit {
         }
 
         return true;
-
     }
     voltar() {
         this.router.navigate(['/auth']);

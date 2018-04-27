@@ -9,9 +9,8 @@
 
 </ActionBar>
 
-<FlexboxLayout class="page">
-
-    <StackLayout>
+<ScrollView>
+    <GridLayout columns="1" rows="3">
 
         <StackLayout>
             <Image row="0" col="0" rowSpan="2" height="200" width="200" src="{{quadrinho.thumbnail.path}}.{{quadrinho.thumbnail.extension}}"
@@ -39,7 +38,7 @@
                 <Label text="Não há personagens" class="header" *ngIf="quadrinho.characters.items.length == 0"></Label>
             </StackLayout>
             <GridLayout>
-                <ListView [items]="quadrinho.characters.items" class="list-group" height="100%">
+                <ListView [items]="quadrinho.characters.items" class="list-group character-list" height="100%">
                     <ng-template let-personagem="item" let-i="index" let-odd="odd" let-even="even">
                         <GridLayout class="list-group-item">
                             <Label [text]="personagem.name"></Label>
@@ -48,5 +47,5 @@
                 </ListView>
             </GridLayout>
         </StackLayout>
-    </StackLayout>
-</FlexboxLayout>
+    </GridLayout>
+</ScrollView>

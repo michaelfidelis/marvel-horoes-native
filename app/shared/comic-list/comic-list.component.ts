@@ -1,4 +1,3 @@
-import { QuadrinhoService } from './../../../platforms/android/app/build/intermediates/assets/debug/app/core/service/quadrinho.service';
 import { Component, OnInit, Input, Output, OnDestroy, EventEmitter, OnChanges, SimpleChanges } from "@angular/core";
 import { Comic, ComicData } from './../../core/model/marvel/';
 import { Observable } from 'rxjs/Observable';

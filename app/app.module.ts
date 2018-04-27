@@ -8,9 +8,9 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 // Uncomment and add to NgModule imports  if you need to use the HTTP wrapper
 import { NativeScriptHttpModule } from "nativescript-angular/http";
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
-import { AuthService, QuadrinhoService, ColecaoPessoalService, CacheService } from "./core";
+import { AuthService, QuadrinhoService, ColecaoPessoalService, CacheService, MockAuthInterceptor } from "./core";
 import { LoginBypassRouteGuard } from "./auth/login-bypass.guard"; 
 import { AuthRouteGuard } from "./auth/auth-route.guard";
 
@@ -29,7 +29,8 @@ import { AuthRouteGuard } from "./auth/auth-route.guard";
         AppComponent,
     ],
     providers: [
-        AuthService, ColecaoPessoalService, QuadrinhoService, LoginBypassRouteGuard, AuthRouteGuard, CacheService
+        AuthService, ColecaoPessoalService, QuadrinhoService, LoginBypassRouteGuard, AuthRouteGuard, CacheService,
+        {provide: HTTP_INTERCEPTORS, useClass: MockAuthInterceptor, multi: true}
     ],
     schemas: [
         NO_ERRORS_SCHEMA
